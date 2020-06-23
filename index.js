@@ -83,6 +83,10 @@ bot.on('message', message => {
         case 'Hello':
                 message.reply('Hello! How are you?');
             break;
+        case 'Hi':
+                message.reply('Hello! How are you?');
+            break;
+        
         
 
     }

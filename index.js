@@ -9,7 +9,7 @@ bot.login(process.env.token);
 
 bot.on('guildMemberAdd', member => {
 
-    const channel = member.guild.channels.cache.find(channel => channel.name == "🎊𝖂𝖊𝖑𝖈𝖔𝖒𝖊🎊");
+    const channel = member.guild.channels.cache.find(channel => channel.name == "general");
 
     channel.send(`Welcome to our Server ${member}.`);
 

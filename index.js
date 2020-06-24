@@ -19,33 +19,6 @@ const PREFIX = '!';
 
 bot.on('message', message => {
 
-    if (message.content.startsWith(prefix + "dm")) {
-        if (!message.member.hasPermission("ADMINISTRATOR"))  return;
-        let args = message.content.split(" ").slice(1);
-        var argresult = args.join(' '); 
-          message.guild.members.filter(m => m.presence.status !== 'offline').forEach(m => {
-         m.send(`${argresult}\n ${m}`);
-        })
-         message.channel.send(`\`${message.guild.members.filter(m => m.presence.status !== 'online').size}\` **MESSAGE SENT** `); 
-         message.delete(); 
-        };     
-        });
-        
-        
-        bot.on('ready',()=>{
-            console.log(' Bot is online now!');
-            let statuses = [
-                "  STATUS HERE ",
-                "  STATUS HERE ",
-                "  STATUS HERE " // U can add another
-                
-            ]
-            setInterval(function(){
-                    let status = statuses[Math.floor(Math.random() * statuses.length)];
-                    bot.user.setActivity(status, {type:"WATCHING"})
-            
-                }, 3000) //Seconds to Random
-
     let args = message.content.substring(PREFIX.length).split(" ");
 
     switch (args[0]) {

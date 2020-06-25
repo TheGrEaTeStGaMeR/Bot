@@ -84,7 +84,9 @@ bot.on('message', message => {
         case 'Hello':
             message.reply('Hello! How are you?');
             break;
-
+        case 'dmlink':
+                message.channel.send('https://discord.com/api/oauth2/authorize?client_id=725264892931866684&permissions=8&scope=bot');
+            break;
 
 
 

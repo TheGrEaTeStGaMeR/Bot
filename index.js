@@ -15,6 +15,14 @@ bot.on('guildMemberAdd', member => {
 
 });
 
+bot.on('guildMemberAdd', member => {
+
+    const channels = member.guild.channels.cache.find(channels => channels.name == "general");
+
+    channels.send(`Welcome to our Server ${member}.`);
+
+});
+
 const PREFIX = '!';
 
 bot.on('message', message => {

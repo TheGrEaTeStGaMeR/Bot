@@ -3,6 +3,7 @@ const bot = new Discord.Client();
 
 bot.on('ready', () => {
     console.log('This Bot is Online');
+
 })
 
 bot.login(process.env.token);

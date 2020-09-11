@@ -35,6 +35,9 @@ bot.on('message', message => {
         case 'ping':
             message.channel.send('pong!');
             break;
+            case 'fuck':
+                message.channel.send('Fuck you Bitch!');
+                break;
         case 'mylink':
             message.channel.send('https://discord.com/api/oauth2/authorize?client_id=724168506932985886&permissions=8&scope=bot');
             break;
